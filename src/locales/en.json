@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "services": "Services",
+        "book": "Book",
+        "contact": "Contact",
+        "call": "Call",
+        "language": "Language"
+    },
+    "hero": {
+        "badge": "New shop now open",
+        "text": "Clean fades, sharp beards and a style that's all yours. Book your slot, drop by the shop and let us sort you out.",
+        "book": "Book now",
+        "call": "Call us"
+    },
+    "marquee": [
+        "CUT",
+        "BEARD",
+        "STYLE",
+        "BOTTEGA DEL TAGLIO",
+        "SHAVE",
+        "FADE"
+    ],
+    "services": {
+        "title": "Price list",
+        "intro": "Pick the service that suits you: haircut, beard or both. Every service includes a wash and blow-dry.",
+        "items": {
+            "capelli": {
+                "name": "Haircut",
+                "desc": "Tailored cut, crisp fades, finished with stylist products."
+            },
+            "barba-capelli": {
+                "name": "Beard + Haircut",
+                "desc": "The full combo: haircut and a razor-finished beard in the same session."
+            },
+            "barba": {
+                "name": "Beard only",
+                "desc": "Line-up, hot-towel shave and beard care."
+            }
+        }
+    },
+    "hours": {
+        "title": "Opening hours",
+        "closed": "Closed on {{day}}s"
+    },
+    "about": {
+        "title": "About us",
+        "text": "Bottega del Taglio was made for people who don't want the usual barber: underground music, neon lights and barbers who follow the trends."
+    },
+    "booking": {
+        "title": "Book your slot",
+        "intro": "Choose a service, a day and a time slot:",
+        "service": "Service",
+        "day": "Day",
+        "slot": "Time slot",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "phone": "Phone",
+        "phonePlaceholder": "Your number",
+        "submit": "Book your spot",
+        "sending": "Sending…",
+        "doneTitle": "Booking confirmed!",
+        "doneText": "See you on {{date}} at {{time}}.",
+        "another": "Book another appointment",
+        "taken": "Already booked",
+        "takenHint": "Crossed-out times are already booked.",
+        "noSlots": "No free times on this day: pick another one.",
+        "slotTaken": "This time has just been booked: pick another one.",
+        "error": "Something went wrong, please try again.",
+        "phoneHint": "Digits and spaces only, with an optional leading +."
+    },
+    "footer": {
+        "tagline": "Clean cuts, sharp beards, underground music. The barbershop where you feel at home."
+    }
+}

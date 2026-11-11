@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "services": "Servizi",
+        "book": "Prenota",
+        "contact": "Contatti",
+        "call": "Chiama",
+        "language": "Lingua"
+    },
+    "hero": {
+        "badge": "Nuova sede aperta",
+        "text": "Fade puliti, barbe rifinite e uno stile tutto tuo. Prenota il tuo slot, passa in bottega e lasciati sistemare.",
+        "book": "Prenota ora",
+        "call": "Chiamaci"
+    },
+    "marquee": [
+        "TAGLIO",
+        "BARBA",
+        "STILE",
+        "BOTTEGA DEL TAGLIO",
+        "RASATURA",
+        "FADE"
+    ],
+    "services": {
+        "title": "Listino",
+        "intro": "Scegli il servizio che fa al caso tuo: taglio, barba o entrambi. Tutti i nostri servizi includono lavaggio e asciugatura.",
+        "items": {
+            "capelli": {
+                "name": "Capelli",
+                "desc": "Taglio su misura, sfumature nette, finish con prodotti stylist."
+            },
+            "barba-capelli": {
+                "name": "Barba + Capelli",
+                "desc": "Il combo completo: taglio e barba rifinita a rasoio nella stessa seduta."
+            },
+            "barba": {
+                "name": "Solo Barba",
+                "desc": "Contorno, rasatura a caldo e cura della barba."
+            }
+        }
+    },
+    "hours": {
+        "title": "Orari",
+        "closed": "{{day}} chiuso"
+    },
+    "about": {
+        "title": "Chi siamo",
+        "text": "Bottega del Taglio è nata per chi non vuole il solito barbiere: musica underground, luci neon e barbieri che seguono i trend."
+    },
+    "booking": {
+        "title": "Prenota il tuo slot",
+        "intro": "Scegli servizio, giorno e fascia oraria:",
+        "service": "Servizio",
+        "day": "Giorno",
+        "slot": "Fascia oraria",
+        "name": "Nome",
+        "namePlaceholder": "Il tuo nome",
+        "phone": "Telefono",
+        "phonePlaceholder": "Il tuo numero",
+        "submit": "Prenota il tuo posto",
+        "sending": "Invio in corso…",
+        "doneTitle": "Prenotazione effettuata!",
+        "doneText": "Ti aspettiamo {{date}} alle {{time}}.",
+        "another": "Prenota un altro appuntamento",
+        "taken": "Già prenotato",
+        "takenHint": "Gli orari barrati sono già prenotati.",
+        "noSlots": "Nessun orario libero in questo giorno: scegline un altro.",
+        "slotTaken": "Questo orario è stato appena prenotato: scegline un altro.",
+        "error": "Qualcosa è andato storto, riprova.",
+        "phoneHint": "Solo cifre e spazi, con il + iniziale facoltativo."
+    },
+    "footer": {
+        "tagline": "Tagli puliti, barbe curate, musica underground. La barberia dove ti riconosci."
+    }
+}

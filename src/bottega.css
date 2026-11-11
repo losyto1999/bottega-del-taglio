@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/plus-jakarta-sans';
+@import '@fontsource-variable/inter';
+
+@theme {
+    --font-display: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+    --color-ink-950: #08070b;
+    --color-ink-900: #0d0b12;
+    --color-ink-800: #16131d;
+    --color-ink-700: #211c2b;
+
+    --color-neon-pink-400: #ff7ad1;
+    --color-neon-pink-500: #ff2fb8;
+
+    --color-neon-yellow-400: #f7ff6b;
+    --color-neon-yellow-500: #e6ff1a;
+
+    --color-neon-cyan-400: #7bf7ff;
+    --color-neon-cyan-500: #22e9ff;
+
+    --shadow-neon-pink: 0 0 18px 2px rgb(255 47 184 / 0.55);
+    --shadow-neon-yellow: 0 0 18px 2px rgb(230 255 26 / 0.5);
+    --shadow-neon-cyan: 0 0 18px 2px rgb(34 233 255 / 0.5);
+
+    --animate-flicker: flicker 2.6s ease-in-out infinite;
+    --animate-marquee: marquee 22s linear infinite;
+
+    @keyframes flicker {
+        /* Solo text-shadow: animare anche l'opacity sul testo del titolo fa cambiare
+           frame per frame l'antialiasing dei glifi su alcuni browser mobile, e quando
+           il titolo è al limite dell'a-capo questo sposta la parola in fondo riga
+           (effetto "saltella"). */
+        0%,
+        100% {
+            text-shadow:
+                0 0 12px rgb(255 47 184 / 0.75),
+                0 0 28px rgb(34 233 255 / 0.45);
+        }
+        50% {
+            text-shadow:
+                0 0 20px rgb(255 47 184 / 0.95),
+                0 0 40px rgb(34 233 255 / 0.6);
+        }
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+/* Alone fisso del titolo, uguale al primo fotogramma di flicker: resta quando l'animazione
+   è spenta da «riduci movimento»; quando gira, i fotogrammi lo sostituiscono. */
+@utility neon-glow {
+    text-shadow:
+        0 0 12px rgb(255 47 184 / 0.75),
+        0 0 28px rgb(34 233 255 / 0.45);
+}
+
+@utility neon-lines {
+    background-image:
+        repeating-linear-gradient(
+            115deg,
+            rgb(255 47 184 / 0.06) 0px,
+            rgb(255 47 184 / 0.06) 1px,
+            transparent 1px,
+            transparent 64px
+        ),
+        repeating-linear-gradient(
+            65deg,
+            rgb(34 233 255 / 0.06) 0px,
+            rgb(34 233 255 / 0.06) 1px,
+            transparent 1px,
+            transparent 64px
+        );
+}
+
+@layer base {
+    /* Le ancore (#servizi, #prenota…) si fermano sotto la nav fissa, alta 4rem. */
+    html {
+        scroll-padding-top: 4rem;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-behavior: smooth;
+        }
+    }
+
+    .bottega-root {
+        @apply bg-ink-950 font-sans text-white;
+    }
+
+    .bottega-root h1,
+    .bottega-root h2,
+    .bottega-root h3 {
+        @apply font-display tracking-tight text-white uppercase;
+    }
+}
