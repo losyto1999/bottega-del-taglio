@@ -103,7 +103,7 @@ Configurazione, una sola volta: *Settings → Pages → Build and deployment →
 
 ## Lingua
 
-La lingua viene scelta in quest'ordine: il parametro `?lng=it` / `?lng=en` nell'URL, poi la scelta fatta con il selettore (salvata nel `localStorage`), infine la lingua del browser. Se nessuna corrisponde, il sito è in italiano.
+La lingua viene scelta in quest'ordine: il parametro `?lng=it` / `?lng=en` nell'URL, poi la scelta fatta con il selettore (salvata nel `localStorage`), infine la lingua del browser. Il parametro `lng`, una volta letto e salvato, viene tolto dall'URL (`src/i18n/index.ts`): l'indirizzo resta pulito e, ricaricando, non ha la precedenza su una scelta fatta poi con il selettore. Se nessuna corrisponde, il sito è in italiano.
 
 I testi stanno in `src/locales/it.json` e `src/locales/en.json` (namespace `bottega`). I due file hanno la stessa struttura di chiavi. Nome e descrizione dei servizi sono alla chiave `services.items.<slug>`. Date e prezzi sono formattati con `Intl`. L'inglese usa `en-GB`: giorno prima del mese e orari in 24 ore.
 
